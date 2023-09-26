@@ -1,0 +1,7 @@
+:host ::ng-deep .p-sidebar .p-sidebar-header {
+  padding: 0.25rem;
+}
+
+:host ::ng-deep .p-sidebar .p-sidebar-footer {
+  padding: 0.25rem;
+}
