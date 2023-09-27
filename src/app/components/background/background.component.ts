@@ -6,9 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./background.component.css'],
 })
 export class BackgroundComponent implements OnInit {
-  value!: string;
+  textPrompt!: string;
+  submittedText: string[] = [];
 
   constructor() {}
 
   ngOnInit() {}
+
+  onSubmitPrompt() {
+    this.submittedText.push(this.textPrompt);
+    this.textPrompt = '';
+  }
 }
